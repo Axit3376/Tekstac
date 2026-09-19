@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Score Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="tracker">
+    <h1><span aria-hidden="true">🎓</span> Student Score Tracker</h1>
+
+    <form id="scoreForm" class="entry-form" novalidate>
+      <label class="sr-only" for="studentName">Student name</label>
+      <input id="studentName" name="studentName" type="text" placeholder="Student Name" autocomplete="off">
+      <label class="sr-only" for="studentScore">Score</label>
+      <input id="studentScore" name="studentScore" type="number" placeholder="Score" step="any" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="message" class="message" aria-live="polite"></p>
+    <ul id="scoreList" aria-label="Student scores"></ul>
+    <p id="average" class="average">Average Score: 0</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
