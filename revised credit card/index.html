@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revised Card Limit Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="report">
+    <h1>Revised Card Limit Check</h1>
+
+    <div class="controls">
+      <span>To get data from API</span>
+      <button id="fetchButton" type="button">Click Here</button>
+    </div>
+
+    <p id="retrievalMessage" class="message" aria-live="polite"></p>
+    <button id="submitButton" type="button" disabled>Submit</button>
+
+    <div id="tableContainer" aria-live="polite"></div>
+    <p id="reportMessage" class="message" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

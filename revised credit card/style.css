@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 24px 40px;
+  background: #a9efd2;
+  color: #222;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.report { max-width: 900px; }
+
+h1 {
+  margin: 0 0 18px;
+  color: #551a8b;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.controls { margin-bottom: 12px; }
+
+button {
+  margin-left: 4px;
+  border: 1px solid #555;
+  background: #d6ad73;
+  color: #111;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#submitButton {
+  margin: 0 0 12px;
+  background: #7c3ba1;
+  color: white;
+}
+
+button:disabled { cursor: not-allowed; opacity: .65; }
+
+.message {
+  min-height: 16px;
+  margin: 0 0 10px;
+  color: #8b1f52;
+  font-weight: bold;
+}
+
+table { border-collapse: collapse; }
+
+th, td {
+  border: 1px solid #555;
+  padding: 1px 3px;
+  text-align: left;
+}
+
+th { font-weight: bold; }
