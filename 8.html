@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+
+    <input type="text" id="username" placeholder="Enter username">
+    <button id="saveBtn">Save</button>
+
+    <script>
+        // Access DOM elements
+        let username = document.getElementById("username");
+        let saveBtn = document.getElementById("saveBtn");
+
+        // Click event
+        saveBtn.addEventListener("click", function() {
+
+            // Remove leading and trailing spaces
+            let name = username.value.trim();
+
+            // Validate username
+            if (name === "") {
+                alert("Username Required");
+                return;
+            }
+
+            // Store in Local Storage
+            localStorage.setItem("username", name);
+
+            // Notification permission
+            if (Notification.permission === "granted") {
+                new Notification("User Saved Successfully");
+            } 
+            else if (Notification.permission !== "denied") {
+                Notification.requestPermission().then(function(permission) {
+                    if (permission === "granted") {
+                        new Notification("User Saved Successfully");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
